@@ -1,0 +1,16 @@
+img.emoji {
+    width: 15px;
+    height: 15px;
+  }
+
+
+table,tr,th,td,caption{
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+p.telephone{
+    font-style: italic;
+}
