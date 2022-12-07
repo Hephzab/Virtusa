@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{ 
+    font-size: 2rem; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* main{
+    background-color: blue;
+    width: 50%;
+} */
+
+p{
+    background-color: lightblue;/* outline level element */
+    /* margin: 100px 50px; */
+}
+
+/* inline element */
+.opposite{
+    display: inline-block;/* 2) takes the size of the inline elt after this we can include margin and height */
+    background-color: #333;
+    color: whitesmoke;
+    margin-top: 100px;
+    height: 200px;
+    /* 1) no chnages when adding margin or height without display property */
+    padding: 1rem;
+}

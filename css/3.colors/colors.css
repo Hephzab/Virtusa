@@ -1,0 +1,20 @@
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #f08080;/*background*/
+    /*color: darkblue;*/
+    color: #000000;
+}
+
+p{
+    /*color: rgba(0,0,0,0); a- alpha channel transperancy 0-1*/
+    color: rgba(0,0,0,0.7);
+    /*hexadecimal 0-9
+    color: #00ff00;*/
+    /*hsl - hue,saturation,lightness
+    hsla- with alpha value...transperency of the color*/
+}
+
+/*coolors.co
+contrast checker*/

@@ -1,0 +1,40 @@
+/*css is same as waterfall model works in sequence and dislpays what is the recent one....but for class as it is specific for an element it does change*/
+/*universal selector*/
+*{
+    font-family: monospace;
+}
+
+/*element selector*/
+body{
+    font-size: 22px;
+}/*one body per page*/
+
+h1,h2/*h1 h2-means h2 nested in h1*/{
+    color: red;
+}
+
+p{
+    color: purple;
+}
+
+/*p span{
+    text-transform: uppercase;
+    background-color: gold;
+} rather than doing this we can do the one below which is more constructed way in css*/
+
+.highlight{/* class selector */
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/*class selector*/
+.gray{
+    color: gray;
+}
+
+/*id selector-only once*/
+#second{
+    font-style: italic;
+}
+
+/*id is not used mostly in css but in html, in css we mostly use class*/

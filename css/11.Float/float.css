@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{ 
+    font-size: 2rem; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.block{
+    width: 30vw;
+    height: 30vw;
+    background-color: #000;
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+.left{
+    float: left;
+    margin-right: 1rem;
+}
+
+.right{
+    float: right;
+    margin-left: 1rem;
+}
+
+.clear {
+    clear: both;
+}/* for one float img or content we can have only that particular text for that img */
+
+section{
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+    /* the container shrinks when the the text is less */
+    display: flow-root;
+}

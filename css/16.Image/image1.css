@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* begin Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;/* img is an inline element so there is a space below */
+}
+
+/* End Reset */
+
+/* Utility Classes */
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+/* End utlilty class */
+
+body{ 
+    font-family: 'Roboto', sans-serif; 
+    min-height: 100vh;
+}
+
+.container{
+    background-color: skyblue/* rgb(251,210,156) */;
+    background-image: url('../images/books.jpg');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    /* background-color: skyblue;
+    background-image: url('../images/scenary.jpg');
+    background-repeat: repeat;
+    background-size: cover; */
+
+    background-color: hsla(0, 0%, 0%, 0.35);
+}
+
+.h1{
+    font-size: 500%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;/* x-axis y-axis blurvalue color */
+    /* background-color: hsla(0, 0%, 0%, 0.404);
+    padding: 0.25rem;
+    border-radius: 10px; */ /* can be included */
+}
+
+.profile-pic-figure{
+    width: 35%;
+}
+
+.profile-pic-figure img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;/* image becomes round for a squared pic */
+}

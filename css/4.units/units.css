@@ -1,0 +1,28 @@
+/*size of everything on the page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+body{
+    min-height: 100vh;/*to increase the height of the body to increase the length to write or include content to the fullest for how much v need to add*/
+}
+
+main{
+    width: 50vw;
+    background-color: turquoise;
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2rem;/*doubles the size of the font*/
+    width: 40ch;
+}

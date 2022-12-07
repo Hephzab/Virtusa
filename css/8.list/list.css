@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{ padding: 10%; 
+    font-size: 2rem; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+ol{
+    list-style-type: upper-roman;/* changes the symbol of the bulletin points...can change ordered list to unordered list (using disc value) and vice-versa*/
+    list-style-type: lower-alpha;
+    padding: 0;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: blue;
+    line-height: 1.6;
+    /* list-style-image:  url('images/checkmark.jpg') ; 
+    list-style: square url('images/checkmark.jpg') inside ;*/
+}
+
+li{
+    color: red;
+}
+
+ul li{
+    color: blue;
+}
+
+ul li:nth-child(2)/* odd even */{
+    color: green;
+}
+
+ul ::marker{
+    color: orangered;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Only $5 >> ";
+}

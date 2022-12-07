@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* It is the way text is arranged and presented */
+body{
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* input, button{
+    font: inherit;
+} */
+
+p{
+    text-decoration: line-through;
+    text-transform: capitalize;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* fonts.google.com 
+too much of font from google takes long time to load the webpage*/

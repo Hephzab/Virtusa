@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: 'Roboto', sans-serif; 
+    min-height: 100vh;
+    background-color: aliceblue;
+    /* background-image: url('/images/bubbles.jpg'), need a transparent pic 
+    linear-gradient(to left, purple, steelblue,
+    white);
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center; */
+
+    /* shorthand  */
+    background: repeat-y right center url('/images/bubbles.jpg'), no-repeat linear-gradient(to left, purple, steelblue,white);
+    background-size: 20%, auto;
+}
