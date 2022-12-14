@@ -1,0 +1,96 @@
+Regular Expresions:
+syntax:
+    /[definition]/gm
+    g- flag - global 
+    m- multiline
+
+website:
+    regexr.com
+
+I want to live
+I want to give
+I've been a miner
+For a heart of gold
+It's these expressions
+I never give
+That keep me searching
+For a heart of gold
+And I'm getting old
+Keep me searching
+For a heart of gold
+And I'm getting old.
+867-530900
+Its'
+You're
+
+1. /[enl]/g
+    selects all the words that includes the mentioned letters
+2. /[^enl]/g
+    selects all the letters except the mentioned ones
+3. /[a-z]/g
+    range values. all small letters
+4. /[A-Z]/g
+    all capital letters
+5. /[0-9]/g
+    all numbers
+6. /./g
+    selects everything except new line character
+7. /\n/g or /\n\r/g
+    selects new line character
+8. /\w/g
+    all words incuding _
+9. /\W/g
+    other than words
+10. /\d/g or /\D/g
+    digits
+11. /\s/g or /\S/g
+    white space
+12. /[\s\S]/g
+    selects everything incuding line space
+13. /^I/gm
+    selects all I thats in the beginning of a line.
+    if its only with g it only selects the first or the starting I.
+14. /d$/gm
+    d that ends in a word
+15. /\./gm
+    to escape special characters
+16. /(old)/gm
+    selects the letters old in any word
+17. /(?:old)/gm
+    selects these letters but does not includes them or take them for output
+18. /g(?=old)/gm
+    selects g followed by old
+19. /g(?:old)/gm
+    selects g not followed by old
+20. /[A-Z]\w+/gm
+21. /[A-Z][a-z]*'*[a-z]*/gm
+    takes the first words
+    * means its optional 
+22. /\d{3}/gm /\d{3,4}/gm
+    selects 3 digits in a row
+23. /(hear)?t/gm
+    ? also means optional
+24. /h\w+/gm
+    selects all the letters of that word afyer letter h 
+    aka greedy character
+25. /h\w+?/gm
+    ? - aka lazy character
+26. /(g|l)ive/gm
+    selects all give and live words
+
+10001 - 5 didgit zip code
+=> /^\d{5}$/gm
+
+10001-1234
+=> /^\d{5}-?(\d{4}$)?/gm
+
+Kansas                   City
+=> /\s{2,}/gm
+
+8675309
+867-5309
+867.5309
+867 5309
+555-867-5309
++1 555 867 5309
+=> /(\+1)?[-. ]?(\d{3})?[-. ]?(\d{3})[-. ]?(\d{4})/gm
